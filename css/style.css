@@ -1,0 +1,106 @@
+body {
+    background: black;
+}
+
+.old-computer-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.computer-button {
+    position: relative;
+    top: 45.3rem;
+    left: 15.7rem;
+    display: block;
+    margin: 0 auto;
+    padding: 22px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+
+}
+
+.computer-button:focus {
+    outline: none;
+}
+
+#starting-text {
+    color: wheat;
+    position: relative;
+    text-align: center;
+    top: 20rem;
+}
+
+#main-page {
+    position: relative;
+    width: 740px;
+    height: 550px;
+    background: rgb(36, 0, 28);
+    background: -moz-linear-gradient(0deg, rgba(36, 0, 28, 1) 0%, rgba(73, 57, 111, 1) 45%);
+    background: -webkit-linear-gradient(0deg, rgba(36, 0, 28, 1) 0%, rgba(73, 57, 111, 1) 45%);
+    background: linear-gradient(0deg, rgba(36, 0, 28, 1) 0%, rgba(73, 57, 111, 1) 45%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#24001c", endColorstr="#49396f", GradientType=1);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.page-link {
+    text-decoration: none;
+    cursor: default;
+}
+
+.page-link img {
+    width: 3.5rem;
+    margin: 3px;
+}
+
+.page-link p {
+    color: white;
+    margin: 3px;
+}
+
+#about-me {
+    background: red;
+    width: 500px;
+    height: 400px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    /*this to solve "the content will not be cut when the window is smaller than the content": */
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+
+}
+
+.row {
+    height: 100%;
+}
+
+.col-md-2 {
+    height: 10%;
+    background: gray;
+}
+
+.col-md-4 {
+    height: 90%;
+}
+
+.window-close-btn {
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+    color: white;
+    background: red;
+    border: 1px solid white;
+    border-radius: 4px;
+}
