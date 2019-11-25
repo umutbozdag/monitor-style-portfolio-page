@@ -21,6 +21,19 @@
     color: white;
 }
 
+#portfolio:hover{
+    cursor: grab;
+}
+
+#portfolio:focus{
+    cursor: grabbing;
+}
+
+#portfolio:active{
+    cursor: grabbing;
+
+}
+
 .row {
     height: 100%;
 }

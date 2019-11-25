@@ -91,15 +91,17 @@
         <div id="cmd" class="draggable">
             <div class="row">
                 <div class="col-md-2">
-                    <div id="control-tab" class="control-tab"> 
+                    <div id="control-tab" class="control-tab">
                         <button id="window-close-btn" class="window-close-btn">X</button>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div id="cmd-screen">
-                        <textarea readonly name="textArea1" id="text-area-1">type help for more info . . . </textarea>
-                        <textarea name="textArea2" id="text-area-2"></textarea>
+                        <textarea readonly name="textArea1" id="text-area-1"></textarea>
+                        <textarea name="textArea2" id="text-area-2" onkeypress="keyPressed(event);"></textarea>
+                        <p id="console-result"></p>
+
                     </div>
                 </div>
             </div>
@@ -118,11 +120,9 @@
 
     </div>
 </body>
-
 <script src="js/index.js"></script>
 <script src="js/about-me.js"></script>
 <script src="js/portfolio.js"></script>
 <script src="js/cmd.js"></script>
 <script src="js/draggable.js"></script>
-
 </html>

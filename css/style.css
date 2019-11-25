@@ -5,7 +5,6 @@ html {
 
 body {
     background: black;
-
 }
 
 #starting-text {
@@ -16,8 +15,19 @@ body {
     color: rgb(16, 252, 36);
     font-family: 'Press Start 2P', cursive;
     font-size: 14px;
+}
 
 
+#main-page::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    z-index: -1;
+    background: url("https://wallpaperplay.com/walls/full/0/5/c/126448.jpg");
 }
 
 #main-page {
@@ -26,12 +36,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-
-    background: rgb(36, 0, 28);
-    background: -moz-linear-gradient(0deg, rgba(36, 0, 28, 1) 0%, rgba(73, 57, 111, 1) 45%);
-    background: -webkit-linear-gradient(0deg, rgba(36, 0, 28, 1) 0%, rgba(73, 57, 111, 1) 45%);
-    background: linear-gradient(0deg, rgba(36, 0, 28, 1) 0%, rgba(73, 57, 111, 1) 45%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#24001c", endColorstr="#49396f", GradientType=1);
     padding: 10px;
 }
 
@@ -101,13 +105,13 @@ body {
     height: 16px;
 }
 
-.footer-date{
+.footer-date {
     color: white;
     font-size: 12px;
     text-align: center;
     margin: 10px;
 }
 
-.window-close-btn:focus{
+.window-close-btn:focus {
     outline: none;
 }

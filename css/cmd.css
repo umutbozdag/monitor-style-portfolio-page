@@ -17,6 +17,18 @@
 
 }
 
+#cmd:hover {
+    cursor: grab;
+}
+
+#cmd:focus {
+    cursor: grabbing;
+}
+
+#cmd:active {
+    cursor: grabbing;
+
+}
 
 .row {
     height: 100%;
@@ -51,8 +63,10 @@
 #text-area-1 {
     width: 100%;
     box-sizing: border-box;
+    height: 10vw;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    line-height: 12px;
 }
 
 #text-area-2 {
@@ -72,4 +86,15 @@
     border: 1px solid white;
     border-radius: 4px;
 
+}
+
+#console-result {
+    position: relative;
+    bottom: 16rem;
+    padding: 5px;
+    color: chartreuse;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px;
+    font-size: 10px;
+    line-height: 12px;
 }
