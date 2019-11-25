@@ -28,6 +28,7 @@ function draggable(element) {
         mouseX = event.clientX;
         mouseY = event.clientY;
         isMouseDown = true;
+
         
     }
 
@@ -44,7 +45,6 @@ function draggable(element) {
         elementX = parseInt(element.style.left) || 0;
         elementY = parseInt(element.style.top) || 0;
 
-        element.style.cursor = "default";
 
 
     }
@@ -65,7 +65,6 @@ function draggable(element) {
         var deltaY = event.clientY - mouseY;
         element.style.left = elementX + deltaX + 'px';
         element.style.top = elementY + deltaY + 'px';
-        element.style.cursor = "all-scroll";
 
     }
 }

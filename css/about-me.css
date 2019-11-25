@@ -17,6 +17,19 @@
 
 }
 
+#about-me:hover{
+    cursor: grab;
+}
+
+#about-me:focus{
+    cursor: grabbing;
+}
+
+#about-me:active{
+    cursor: grabbing;
+
+}
+
 #about-me-content{
     color: white;
 }
