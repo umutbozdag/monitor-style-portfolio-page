@@ -1,9 +1,9 @@
 var aboutMeButton = document.getElementById("about-me-button");
 var aboutMeDiv = document.getElementById("about-me");
-var windowCloseBtn = document.getElementById("window-close-btn");
+var windowCloseBtn = document.querySelectorAll(".window-close-btn");
 
 aboutMeButton.addEventListener("dblclick", handleClick);
-windowCloseBtn.addEventListener("click", closeWindow);
+windowCloseBtn[0].addEventListener("click", closeWindow);
 
 aboutMeDiv.style.visibility = "hidden";
 var mouseClickSound = new Audio('sounds/double_click.ogg');
@@ -19,8 +19,6 @@ function handleClick() {
     }
 }
 
-function closeWindow(){
+function closeWindow() {
     aboutMeDiv.style.visibility = "hidden";
 }
-
-
