@@ -1,24 +1,18 @@
-
 var startingText = document.getElementById("starting-text");
 var mainPage = document.getElementById("main-page");
 
-
 mainPage.style.visibility = "hidden";
 
-function printLetterByLetter(destination, message, speed){
-  var i = 0;
-  var interval = setInterval(function(){
-      document.getElementById(destination).innerHTML += message.charAt(i);
-      i++;
-      if (i > message.length){
-          clearInterval(interval);
-      }
-  }, speed);
+function printLetterByLetter(destination, message, speed) {
+    var i = 0;
+    var interval = setInterval(function () {
+        document.getElementById(destination).innerHTML += message.charAt(i);
+        i++;
+        if (i > message.length) {
+            clearInterval(interval);
+        }
+    }, speed);
 }
-printLetterByLetter("starting-text", "Hello world!\nBooting >", 100);
-
-handleVisibility();
-
 
 function handleVisibility() {
     if (startingText.style.visibility == "visible") {
@@ -40,3 +34,7 @@ function handleVisibility() {
         clearTimeout(timeout);
     }
 }
+
+printLetterByLetter("starting-text", "Hello world!\nBooting >", 100);
+
+handleVisibility();
