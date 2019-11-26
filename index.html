@@ -9,9 +9,19 @@
     <link rel="stylesheet" href="css/about-me.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/cmd.css">
+
+    <script src="js/index.js" async></script>
+    <script src="js/about-me.js" async></script>
+    <script src="js/portfolio.js" async></script>
+    <script src="js/cmd.js" async></script>
+    <script src="js/draggable.js" async></script>
+    <script src="js/start-menu.js" async></script>
+
+    <link rel="stylesheet" href="css/start-menu.css">
+
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <title>Portfolio Page</title>
+    <title>Page</title>
 </head>
 
 <body>
@@ -40,7 +50,7 @@
         <div id="about-me" class="draggable">
             <div class="row">
                 <div class="col-md-2">
-                    <div id="control-tab" class="control-tab">
+                    <div id="control-tab-1" class="control-tab">
                         <button id="window-close-btn" class="window-close-btn">X</button>
                     </div>
                 </div>
@@ -65,7 +75,7 @@
         <div id="portfolio" class="draggable">
             <div class="row">
                 <div class="col-md-2">
-                    <div id="control-tab" class="control-tab">
+                    <div id="control-tab-2" class="control-tab">
                         <button id="window-close-btn" class="window-close-btn">X</button>
                     </div>
                 </div>
@@ -91,7 +101,7 @@
         <div id="cmd" class="draggable">
             <div class="row">
                 <div class="col-md-2">
-                    <div id="control-tab" class="control-tab">
+                    <div id="control-tab-3" class="control-tab">
                         <button id="window-close-btn" class="window-close-btn">X</button>
                     </div>
                 </div>
@@ -108,21 +118,20 @@
         </div>
 
         <footer id="footer">
+            <div id="start-menu"></div>
             <div id="footer-left">
                 <button id="start-button"> <img class="start-button-img" src="images/windows_xp.png" alt="">
                     Start</button>
             </div>
 
             <div id="footer-right">
-                <p class="footer-date">13:46 <br> 25.11.2008</p>
+                <p id="footer-date" class="footer-date"></p>
             </div>
         </footer>
 
     </div>
+
+
 </body>
-<script src="js/index.js"></script>
-<script src="js/about-me.js"></script>
-<script src="js/portfolio.js"></script>
-<script src="js/cmd.js"></script>
-<script src="js/draggable.js"></script>
+
 </html>

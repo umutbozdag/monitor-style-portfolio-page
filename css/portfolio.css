@@ -11,27 +11,25 @@
     margin: auto;
 
     /*this to solve "the content will not be cut when the window is smaller than the content": */
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 75%;
+    max-height: 75%;
+
+    min-width: 30%;
+    min-height: 35%;
     overflow: auto;
 
+    /* for resizeable div */
+    resize: both;
+
 }
 
-#portfolio-content{
+#portfolio::-webkit-resizer {
+    background-color: gray;
+}
+
+#portfolio-content {
+    padding: 20px;
     color: white;
-}
-
-#portfolio:hover{
-    cursor: grab;
-}
-
-#portfolio:focus{
-    cursor: grabbing;
-}
-
-#portfolio:active{
-    cursor: grabbing;
-
 }
 
 .row {
@@ -43,7 +41,6 @@
     background: rgb(124, 118, 118);
 
 }
-
 
 .col-md-4 {
     padding: 20px;

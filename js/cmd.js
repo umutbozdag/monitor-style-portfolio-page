@@ -14,25 +14,25 @@ color default -> Default
 clear -> Clear window
 `
 
-cmdButton.addEventListener("dblclick", handleClick);
+cmdButton.addEventListener("dblclick", handleDoubleClick);
 windowCloseBtn[2].addEventListener("click", closeWindow);
 
-cmdDiv.style.visibility = "hidden";
+cmdDiv.style.display = "none";
 var mouseClickSound = new Audio('sounds/double_click.ogg');
 
-function handleClick() {
+function handleDoubleClick() {
 
     mouseClickSound.play();
 
-    if (cmdDiv.style.visibility == "hidden") {
-        cmdDiv.style.visibility = "visible";
+    if (cmdDiv.style.display == "none") {
+        cmdDiv.style.display = "inline";
     } else {
-        cmdDiv.style.visibility = "hidden";
+        cmdDiv.style.display = "none";
     }
 }
 
 function closeWindow() {
-    cmdDiv.style.visibility = "hidden";
+    cmdDiv.style.display = "none";
 }
 
 function keyPressed(e) {
@@ -52,10 +52,3 @@ function date() {
     textArea.value = dateTime;
     textArea.readOnly = true;
 }
-
-
-
-
-
-
-

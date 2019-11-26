@@ -1,12 +1,9 @@
 html {
     min-height: 100%;
-
 }
-
-body {
+body{
     background: black;
 }
-
 #starting-text {
     position: absolute;
     top: 50%;
@@ -25,19 +22,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.85;
+    opacity: 0.95;
     z-index: -1;
-    background: url("https://wallpaperplay.com/walls/full/0/5/c/126448.jpg");
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/bg.svg") no-repeat;
 }
 
-#main-page {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-}
+
 
 .page-link {
     text-decoration: none;
@@ -59,32 +49,32 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 10px;
     line-height: 1rem;
-
-
 }
-
 
 #footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 42px;
-    width: 100%;
+    height: auto;
 }
 
 #footer-left {
     width: 95%;
     float: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     background: rgb(113, 113, 134);
 }
 
 #footer-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
     width: 5%;
     background: rgb(65, 139, 182);
     float: right;
 }
-
-
 
 #start-button {
     padding: 12px;
@@ -114,4 +104,17 @@ body {
 
 .window-close-btn:focus {
     outline: none;
+}
+
+
+.col-md-2:hover {
+    cursor: grab;
+}
+
+.col-md-2:focus {
+    cursor: grabbing;
+}
+
+.col-md-2:active {
+    cursor: grabbing;
 }

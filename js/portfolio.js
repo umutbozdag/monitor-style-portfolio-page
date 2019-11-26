@@ -2,23 +2,23 @@ var portfolioButton = document.getElementById("portfolio-button");
 var portfolioDiv = document.getElementById("portfolio");
 var windowCloseBtn = document.querySelectorAll(".window-close-btn");
 
-portfolioButton.addEventListener("dblclick", handleClick);
+portfolioButton.addEventListener("dblclick", handleDoubleClick);
 windowCloseBtn[1].addEventListener("click", closeWindow);
 
-portfolioDiv.style.visibility = "hidden";
+portfolioDiv.style.display = "none";
 var mouseClickSound = new Audio('sounds/double_click.ogg');
 
-function handleClick() {
+function handleDoubleClick() {
 
     mouseClickSound.play();
 
-    if (portfolioDiv.style.visibility == "hidden") {
-        portfolioDiv.style.visibility = "visible";
+    if (portfolioDiv.style.display == "none") {
+        portfolioDiv.style.display = "inline";
     } else {
-        portfolioDiv.style.visibility = "hidden";
+        portfolioDiv.style.display = "none";
     }
 }
 
 function closeWindow() {
-    portfolioDiv.style.visibility = "hidden";
+    portfolioDiv.style.display = "none";
 }

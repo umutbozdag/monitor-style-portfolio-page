@@ -29,7 +29,7 @@ function draggable(element) {
         mouseY = event.clientY;
         isMouseDown = true;
 
-        
+
     }
 
     // mouse button released
@@ -69,6 +69,6 @@ function draggable(element) {
     }
 }
 
-draggable(document.getElementById('cmd'));
-draggable(document.getElementById('portfolio'));
 draggable(document.getElementById('about-me'));
+draggable(document.getElementById('portfolio'));
+draggable(document.getElementById('cmd'));

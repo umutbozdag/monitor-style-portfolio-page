@@ -1,6 +1,6 @@
 #cmd {
     width: 800px;
-    height: 700px;
+    height: 600px;
     background: rgb(29, 23, 34);
 
     position: absolute;
@@ -11,22 +11,14 @@
     margin: auto;
 
     /*this to solve "the content will not be cut when the window is smaller than the content": */
-    max-width: 100%;
-    max-height: 100%;
-    overflow: auto;
+    max-width: 75%;
+    max-height: 75%;
 
-}
+    min-width: 30%;
+    min-height: 35%;
+    overflow: hidden;
 
-#cmd:hover {
-    cursor: grab;
-}
-
-#cmd:focus {
-    cursor: grabbing;
-}
-
-#cmd:active {
-    cursor: grabbing;
+    resize: both;
 
 }
 
@@ -37,12 +29,10 @@
 .col-md-2 {
     height: 10%;
     background: rgb(124, 118, 118);
-
 }
 
-
 .col-md-4 {
-    padding: 20px;
+    padding: 0;
 }
 
 #cmd-screen textarea {
