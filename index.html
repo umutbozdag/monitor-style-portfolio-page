@@ -11,12 +11,10 @@
     <link rel="stylesheet" href="css/cmd.css">
 
     <script src="js/index.js" async></script>
-    <script src="js/about-me.js" async></script>
-    <script src="js/portfolio.js" async></script>
     <script src="js/cmd.js" async></script>
     <script src="js/draggable.js" async></script>
     <script src="js/start-menu.js" async></script>
-
+    <script src="js/page-links.js" async></script>
     <link rel="stylesheet" href="css/start-menu.css">
 
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -32,95 +30,30 @@
 
     <div id="main-page">
         <a id="about-me-button" class="page-link" href="#"><img
-                src="https://img.icons8.com/office/256/000000/folder-invoices.png" alt="">
+                src="https://img.icons8.com/office/256/000000/folder-invoices.png" alt="Folder icon">
             <p>About me</p>
         </a>
         <a id="portfolio-button" class="page-link" href="#"><img
-                src="https://img.icons8.com/office/256/000000/folder-invoices.png" alt="">
+                src="https://img.icons8.com/office/256/000000/folder-invoices.png" alt="Folder icon">
             <p>Portfolio</p>
         </a>
-        <a id="trash-button" class="page-link" href="#"><img src="images/trash_icon.png" alt="">
+        <a id="trash-button" class="page-link" href="#"><img src="images/trash_icon.png" alt="Trash icon">
             <p>Recycle Bin</p>
         </a>
 
-        <a id="cmd-button" class="page-link" href="#"><img src="images/cmd.png" alt="">
+        <a id="cmd-button" class="page-link" href="#"><img src="images/cmd.png" alt="Cmd icon">
             <p>cmd</p>
         </a>
 
-        <div id="about-me" class="draggable">
-            <div class="row">
-                <div class="col-md-2">
-                    <div id="control-tab-1" class="control-tab">
-                        <button id="window-close-btn" class="window-close-btn">X</button>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div id="about-me-content">
-                        <h3>About me</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste ducimus atque cupiditate
-                            itaque minima alias quod sed corporis. Ipsam laudantium architecto earum non repellat dolore
-                            nostrum cumque officia eos dolores. In, illum molestiae impedit, temporibus earum error aut
-                            sint nemo tenetur et illo non quidem amet quibusdam fuga molestias autem vero ut voluptates
-                            voluptas voluptatibus atque ex qui! Magni ipsam molestias dolor provident. Nobis odit
-                            obcaecati illum optio sapiente facere asperiores necessitatibus ex aspernatur, fugit sunt
-                            rerum enim quasi delectus adipisci atque error perspiciatis? Veniam, corporis, nemo
-                            asperiores suscipit doloremque cum aperiam molestias rem ea accusantium numquam facere,
-                            dolorem temporibus!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="portfolio" class="draggable">
-            <div class="row">
-                <div class="col-md-2">
-                    <div id="control-tab-2" class="control-tab">
-                        <button id="window-close-btn" class="window-close-btn">X</button>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div id="portfolio-content">
-                        <h3>Portfolio</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste ducimus atque cupiditate
-                            itaque minima alias quod sed corporis. Ipsam laudantium architecto earum non repellat dolore
-                            nostrum cumque officia eos dolores. In, illum molestiae impedit, temporibus earum error aut
-                            sint nemo tenetur et illo non quidem amet quibusdam fuga molestias autem vero ut voluptates
-                            voluptas voluptatibus atque ex qui! Magni ipsam molestias dolor provident. Nobis odit
-                            obcaecati illum optio sapiente facere asperiores necessitatibus ex aspernatur, fugit sunt
-                            rerum enim quasi delectus adipisci atque error perspiciatis? Veniam, corporis, nemo
-                            asperiores suscipit doloremque cum aperiam molestias rem ea accusantium numquam facere,
-                            dolorem temporibus!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="cmd" class="draggable">
-            <div class="row">
-                <div class="col-md-2">
-                    <div id="control-tab-3" class="control-tab">
-                        <button id="window-close-btn" class="window-close-btn">X</button>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div id="cmd-screen">
-                        <textarea readonly name="textArea1" id="text-area-1"></textarea>
-                        <textarea name="textArea2" id="text-area-2" onkeypress="keyPressed(event);"></textarea>
-                        <p id="console-result"></p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a id="video-button-1" class="page-link" href="#"><img src="images/sunny_icon.png" alt="Video icon">
+            <p>sunny.mp4</p>
+        </a>
 
         <footer id="footer">
             <div id="start-menu"></div>
             <div id="footer-left">
-                <button id="start-button"> <img class="start-button-img" src="images/windows_xp.png" alt="">
+                <button id="start-button"> <img class="start-button-img" src="images/windows_xp.png"
+                        alt="Windows xp icon">
                     Start</button>
             </div>
 
@@ -128,9 +61,77 @@
                 <p id="footer-date" class="footer-date"></p>
             </div>
         </footer>
-
     </div>
 
+    <div id="about-me" class="draggable">
+        <div class="row">
+            <div class="col-md-2">
+                <div id="control-tab-1" class="control-tab">
+                    <button id="window-close-btn" class="window-close-btn">X</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="about-me-content">
+                    <h3>About me</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste ducimus atque cupiditate
+                        itaque minima alias quod sed corporis. Ipsam laudantium architecto earum non repellat dolore
+                        nostrum cumque officia eos dolores. In, illum molestiae impedit, temporibus earum error aut
+                        sint nemo tenetur et illo non quidem amet quibusdam fuga molestias autem vero ut voluptates
+                        voluptas voluptatibus atque ex qui! Magni ipsam molestias dolor provident. Nobis odit
+                        obcaecati illum optio sapiente facere asperiores necessitatibus ex aspernatur, fugit sunt
+                        rerum enim quasi delectus adipisci atque error perspiciatis? Veniam, corporis, nemo
+                        asperiores suscipit doloremque cum aperiam molestias rem ea accusantium numquam facere,
+                        dolorem temporibus!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="draggable">
+        <div class="row">
+            <div class="col-md-2">
+                <div id="control-tab-2" class="control-tab">
+                    <button id="window-close-btn" class="window-close-btn">X</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="portfolio-content">
+                    <h3>Portfolio</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste ducimus atque cupiditate
+                        itaque minima alias quod sed corporis. Ipsam laudantium architecto earum non repellat dolore
+                        nostrum cumque officia eos dolores. In, illum molestiae impedit, temporibus earum error aut
+                        sint nemo tenetur et illo non quidem amet quibusdam fuga molestias autem vero ut voluptates
+                        voluptas voluptatibus atque ex qui! Magni ipsam molestias dolor provident. Nobis odit
+                        obcaecati illum optio sapiente facere asperiores necessitatibus ex aspernatur, fugit sunt
+                        rerum enim quasi delectus adipisci atque error perspiciatis? Veniam, corporis, nemo
+                        asperiores suscipit doloremque cum aperiam molestias rem ea accusantium numquam facere,
+                        dolorem temporibus!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="cmd" class="draggable">
+        <div class="row">
+            <div class="col-md-2">
+                <div id="control-tab-3" class="control-tab">
+                    <button id="window-close-btn" class="window-close-btn">X</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="cmd-screen">
+                    <textarea readonly name="textArea1" id="text-area-1"></textarea>
+                    <textarea name="textArea2" id="text-area-2" onkeypress="keyPressed(event);"></textarea>
+                    <p id="console-result"></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
